@@ -50,3 +50,122 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+/CodenameOne/nbproject/private/
+/CodenameOne/javadoc/
+/CodenameOneDesigner/nbproject/private/
+/Ports/Android/nbproject/private/
+/Ports/BlackBerryOS_4_2/nbproject/private/
+/Ports/BlackBerryOS_5/nbproject/private/
+/Ports/JavaSE/nbproject/private/
+/Factory/nbproject/private/
+/vm/ByteCodeTranslator/nbproject/private/
+/vm/JavaAPI/nbproject/private/
+/Factory/build/
+/CodenameOne/build/
+/Factory/dist/
+/CodenameOne/dist/
+/Ports/Android/build/
+/Ports/Android/dist/
+/Ports/BlackBerryOS_4_2/build/
+/Ports/BlackBerryOS_5/build/
+/Ports/BlackBerryOS_4_2/dist/
+/Ports/BlackBerryOS_5/dist/
+/Ports/JavaSE/build/
+*.skin
+*.jar
+*.class
+**/private/*
+**/.idea/*
+**/build/*
+**/dist/*
+*.zip
+CodenameOneDesigner/src/version.properties
+/Ports/iOSPort/build/
+/Ports/iOSPort/dist/
+Ports/iOSPort/nbproject/private/private.xml
+/Ports/JavaSE/dist/
+
+*.nbm
+/vm/ByteCodeTranslator/build/
+/vm/ByteCodeTranslator/dist/
+/vm/JavaAPI/build/
+/vm/JavaAPI/dist/
+Ports/iOSPort/nbproject/private/private.properties
+CodenameOne/build.xml
+CodenameOne/build.xml
+Ports/iOSPort/nbproject/private/private.properties
+/Ports/JavaSEWithSVGSupport/nbproject/private/
+/Ports/JavaSEWithSVGSupport/build/
+/Ports/JavaSEWithSVGSupport/dist/
+nightly_builds/.DS_Store
+/tests/iOSTests/build/
+node_modules
+/tests/core/nbproject/private/
+/tests/core/dist/
+/tests/core/build/
+/tests/signin-demo/nbproject/private/
+/Ports/J2ME/nbproject/private/
+/Ports/CLDC11/nbproject/private/
+/Ports/Android/CompatLibs/nbproject/private/
+/Ports/UWP/nbproject/private/
+/Ports/CLDC11/build/
+/Ports/CLDC11/dist/
+/Samples/SampleProjectTemplate/nbproject/private/
+/Samples/config
+**/.DS_Store
+**/build-impl.xml
+**/genfiles.properties
+**/private/private.properties
+.idea/
+target
+pom.xml.versionsBackup
+pom.xml.releaseBackup
+pom.xml.tag
+!maven/**/*.zip
+
+
