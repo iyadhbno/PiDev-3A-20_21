@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+    <h1>User index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Mdp</th>
+            <th>Tel</th>
+            <th>Photo</th>
+            <th>Cv</th>
+            <th>Offre</th>
+            <th>Etatcompte</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for etudiant in etudiants %}
+            <tr>
+                <td>{{ etudiant.id }}</td>
+                <td>{{ etudiant.nom }}</td>
+                <td>{{ etudiant.email }}</td>
+                <td>{{ etudiant.password }}</td>
+                <td>{{ etudiant.tel }}</td>
+                <td>{{ etudiant.photo }}</td>
+                <td>{{ etudiant.cv }}</td>
+                <td>{{ etudiant.offre }}</td>
+                <td>{{ etudiant.etatcompte ? 'Yes' : 'No' }}</td>
+                <td>
+                    <a href="">show</a>
+                    <a href="">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="">Create new</a>
+{% endblock %}

@@ -1,0 +1,3 @@
+entrepriseNewM:
+    path: /newEntrepriseM
+    controller: App\Controller\MobileController::newEnt

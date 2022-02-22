@@ -1,0 +1,8 @@
+{
+    "require-dev": {
+        "symfony/web-server-bundle": "^4.4"
+    },
+    "require": {
+        "knplabs/knp-paginator-bundle": "^5.6"
+    }
+}

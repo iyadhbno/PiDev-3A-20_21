@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+    <h1>User index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Mdp</th>
+                <th>Tel</th>
+                <th>Photo</th>
+                <th>Offre</th>
+                <th>Etatcompte</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entreprise in entreprises %}
+            <tr>
+                <td>{{ entreprise.id }}</td>
+                <td>{{ entreprise.nom }}</td>
+                <td>{{ entreprise.email }}</td>
+                <td>{{ entreprise.password }}</td>
+                <td>{{ entreprise.tel }}</td>
+                <td>{{ entreprise.photo }}</td>
+                <td>{{ entreprise.offre }}</td>
+                <td>{{ entreprise.etatcompte ? 'Yes' : 'No' }}</td>
+                <td>
+        
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('entreprise_new') }}">Create new</a>
+{% endblock %}
