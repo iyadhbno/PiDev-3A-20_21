@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.pidev.ui.login.LoginController">
+   <center>
+      <AnchorPane fx:id="rootPane" prefHeight="800.0" prefWidth="524.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="mailLog" layoutX="319.0" layoutY="165.0" promptText="Email" />
+            <Label layoutX="321.0" layoutY="139.0" text="Email" />
+            <Label layoutX="321.0" layoutY="197.0" text="Mot de passe" />
+            <Line endX="100.0" layoutX="418.0" layoutY="374.0" startX="-100.0" />
+            <Label layoutX="247.0" layoutY="60.0" prefHeight="66.0" prefWidth="345.0" text="Authentification" textAlignment="CENTER">
+               <effect>
+                  <Blend />
+               </effect>
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="383.0" text="Inscription">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+            <Button fx:id="inscriEtu" layoutX="420.0" layoutY="493.0" mnemonicParsing="false" onAction="#loadInscriEtu" text="Etudiant" />
+            <Button fx:id="inscriEnt" layoutX="414.0" layoutY="554.0" mnemonicParsing="false" onAction="#loadInscriEnt" text="Entreprise" />
+            <Button fx:id="connectLog" layoutX="360.0" layoutY="266.0" mnemonicParsing="false" onAction="#connectLog" text="Se Connecter" />
+            <Button fx:id="pwLog" layoutX="338.0" layoutY="308.0" mnemonicParsing="false" onAction="#pwLog" text="Mot de passe oublier" />
+            <Label layoutX="328.0" layoutY="498.0" text="En tant que" />
+            <Label layoutX="331.0" layoutY="559.0" text="En tant que" />
+            <PasswordField fx:id="pwdLog" layoutX="320.0" layoutY="227.0" promptText="Mot de passe" />
+            <Label fx:id="label_adresse" layoutX="688.0" layoutY="14.0" prefHeight="26.0" prefWidth="97.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
